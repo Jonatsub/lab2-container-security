@@ -8,7 +8,7 @@ Efter hardening skannade jag imagen igen med Trivy och jämförde resultatet med
 
 Jag genererade också en SBOM i CycloneDX-format för att kunna se vilka komponenter och beroenden som finns i imagen.
 
-I Gatekeeper Lab testade jag policies i Kubernetes. Bad Pod stoppades eftersom den bröt mot flera regler, medan Hardened Pod gick igenom men med en varning om default service account.
+I Gatekeeper Lab testade jag policies i Kubernetes. Bad Pod stoppades eftersom den bröt mot flera regler, medan Hardened Pod gick igenom men med en varning om default service account. Det visar också att det fortfarande går att förbättra säkerheten ytterligare, till exempel genom att använda ett eget service account i stället för default.
 
 I repot finns följande filer:
 
